@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ modelName }}{% endblock %}
+        {% block stylesheets %}
+
+        {% endblock %}
+ {% block javascripts %}
+
+
+ {% endblock %}
+
+{% block body %}
+    <div class="col-12 col-md-12">
+        dfsdfsdfsdf
+        {% for message in app.flashes('notice') %}
+            <div class="flash-notice">
+            {{  message }}
+            </div>
+            {% endfor %}
+    </div>
+{% endblock %}

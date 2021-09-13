@@ -1,0 +1,15 @@
+index:
+    path: /
+    controller: App\Controller\MainController::index
+
+getInfo:
+    path: /getInfo/{id}
+    controller: App\Controller\MainController::getInfo
+
+gettwitter:
+    path: /twitter
+    controller: App\Controller\TwitterController:index
+
+postTwitter:
+    path: /settwitter
+    controller: App\Controller\TwitterController:insert
