@@ -3,7 +3,7 @@ App\Entity\Twitt:
         body:
             - NotBlank: ~
             - Length:
-                min: 5
-                max: 8
+                min: 2
+                max: 50
                 minMessage: 'Your first name must be at least {{ limit }} characters long'
                 maxMessage: 'Your first name'

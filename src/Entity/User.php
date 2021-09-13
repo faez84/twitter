@@ -35,6 +35,26 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $password;
 
+     /**
+      * @ORM\Column(type="string", unique=true, nullable=true)
+      */
+
+     private $apiToken;
+
+
+
+    public function getApiToken(): ?int
+    {
+        return $this->apiToken;
+    }
+
+    public function setApiToken(string $apiToken): self
+    {
+        $this->apiToken = $apiToken;
+
+        return $this;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
