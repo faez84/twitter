@@ -28,5 +28,7 @@ services:
     App\Model\Twitt:
         arguments: ['@doctrine.orm.entity_manager', '@app.builder.twitt', '@validator']
 
-
+    App\Listener\ExceptionListener:
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception }
 

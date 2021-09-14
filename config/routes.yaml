@@ -9,7 +9,9 @@ getInfo:
 gettwitter:
     path: /twitter
     controller: App\Controller\TwitterController:index
+    methods:    GET
 
 postTwitter:
-    path: /settwitter
+    path: /twitter
     controller: App\Controller\TwitterController:insert
+    methods:    POST
